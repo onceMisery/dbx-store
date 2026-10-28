@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "io.github.oncemisery.hertz-studio",
+  "publisher": "oncemisery",
+  "version": "0.3.0",
+  "name": "Hertz Studio Standard",
+  "description": "Local-first music service and player: library scanning, native playback, playlists, word-level lyrics and an immersive 3D stage, all running on your own machine.",
+  "icon": "https://raw.githubusercontent.com/onceMisery/hertz-studio/hertz-plugin-standard-v0.3.0/plugin/assets/plugin.svg",
+  "tags": [
+    "music",
+    "player",
+    "lyrics",
+    "audio",
+    "local-first"
+  ],
+  "permissions": [
+    "host.events",
+    "host.storage",
+    "host.workbench"
+  ],
+  "source": "https://github.com/onceMisery/hertz-studio/tree/hertz-plugin-standard-v0.3.0",
+  "homepage": "https://github.com/onceMisery/hertz-studio",
+  "license": "MIT",
+  "releaseNotes": "0.3.0：新增 RSS 图文阅读整页工作台、局域网一起听房间工作区（邀请权限、点歌、每人独立舞台）、凤凰舞台场景与原生选目录；播放生命周期与一起听 PCM 投递门控收口。Standard 不编译商业音乐平台协议与账号，保留本地/WebDAV、Jamendo、ccMixter 与公开播客；桌面歌词/壁纸的原生组件不随本包分发。",
+  "localizations": {
+    "zh-CN": {
+      "name": "Hertz Studio Standard",
+      "description": "本地优先的音乐服务与播放器：曲库扫描、原生出声、歌单、逐字歌词与沉浸式 3D 舞台，全部跑在你自己的机器上。"
+    }
+  },
+  "targets": [
+    {
+      "target": "windows-x64",
+      "url": "https://github.com/onceMisery/hertz-studio/releases/download/hertz-plugin-standard-v0.3.0/io.github.oncemisery.hertz-studio-0.3.0-windows-x64.dbxp",
+      "sha256": "35a4d6ca003a20b3f76bc5d8b1228943f92611f504f3b3062853ea624c73d0d0",
+      "size": 12798297
+    },
+    {
+      "target": "linux-x64",
+      "url": "https://github.com/onceMisery/hertz-studio/releases/download/hertz-plugin-standard-v0.3.0/io.github.oncemisery.hertz-studio-0.3.0-linux-x64.dbxp",
+      "sha256": "2b630912b6bad2839360e11294699e73df31368dd1e537a5817e3d02c0506503",
+      "size": 14825108
+    },
+    {
+      "target": "linux-arm64",
+      "url": "https://github.com/onceMisery/hertz-studio/releases/download/hertz-plugin-standard-v0.3.0/io.github.oncemisery.hertz-studio-0.3.0-linux-arm64.dbxp",
+      "sha256": "2ad6205b1a0dde41b7b0115462d47787e80b2fed8c36cf6ceaed4ae7e8cce342",
+      "size": 14563970
+    },
+    {
+      "target": "darwin-x64",
+      "url": "https://github.com/onceMisery/hertz-studio/releases/download/hertz-plugin-standard-v0.3.0/io.github.oncemisery.hertz-studio-0.3.0-darwin-x64.dbxp",
+      "sha256": "a86dec80b036f2e96a77ee6c891dfe5fb0f8114f748f912e0dd84bf86a2077bc",
+      "size": 14049687
+    },
+    {
+      "target": "darwin-arm64",
+      "url": "https://github.com/onceMisery/hertz-studio/releases/download/hertz-plugin-standard-v0.3.0/io.github.oncemisery.hertz-studio-0.3.0-darwin-arm64.dbxp",
+      "sha256": "a1201a8bf9b37c28a69a65005cfa987dc039813f62cc2b399d3c196b366be56f",
+      "size": 13020069
+    }
+  ]
+}
