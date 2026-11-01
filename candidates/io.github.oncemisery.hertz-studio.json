@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "io.github.oncemisery.hertz-studio",
+  "publisher": "oncemisery",
+  "version": "0.3.1",
+  "releaseNotes": "0.3.1：逐字歌词舞台改成连续弧线表演、活动字染色与换句星芒，三维舞台的歌词改用透明层不再盖住场景；局域网一起听的点播、头像与封面传输收口；星轨侧栏断点对齐 900px、主题前景对比度修正，队列存歌单即时回写。Standard 不编译商业音乐平台协议与账号，保留本地/WebDAV、Jamendo、ccMixter 与公开播客；桌面歌词/壁纸的原生组件不随本包分发，插件也不下载、不启动它。\n\n网络监听说明：插件默认不监听任何端口；仅当用户在“一起听”里主动开房且本机为房主时，sidecar 才在用户选定的那张本机网卡地址上绑定一个 TLS + WebSocket 端口（/v1/room，自签证书 + SHA-256 指纹钉扎，入房需邀请/审批），并在用户勾选“可被发现”时用 mDNS（_hertz-listen._tcp）广播房间元数据；独立二进制的 HTTP + token 层只绑 127.0.0.1。",
+  "icon": "https://raw.githubusercontent.com/onceMisery/hertz-studio/hertz-plugin-standard-v0.3.1/plugin/assets/plugin.svg",
+  "source": "https://github.com/onceMisery/hertz-studio/tree/hertz-plugin-standard-v0.3.1",
+  "targets": [
+    {
+      "target": "windows-x64",
+      "url": "https://github.com/onceMisery/hertz-studio/releases/download/hertz-plugin-standard-v0.3.1/io.github.oncemisery.hertz-studio-0.3.1-windows-x64.dbxp",
+      "sha256": "c8fba31fc0982f75db4a107d127e21ba46b03579cee577b2e4340f4d66841903",
+      "size": 13160103
+    },
+    {
+      "target": "linux-x64",
+      "url": "https://github.com/onceMisery/hertz-studio/releases/download/hertz-plugin-standard-v0.3.1/io.github.oncemisery.hertz-studio-0.3.1-linux-x64.dbxp",
+      "sha256": "0085bf43bc33df07a838a00342b032c525c7bfc7af418617b7f14aadd08c833f",
+      "size": 14963163
+    },
+    {
+      "target": "linux-arm64",
+      "url": "https://github.com/onceMisery/hertz-studio/releases/download/hertz-plugin-standard-v0.3.1/io.github.oncemisery.hertz-studio-0.3.1-linux-arm64.dbxp",
+      "sha256": "2beb68a3c35eab591878cd4383c4854f53393a4d86e83d7337c1cb7c7974eb3c",
+      "size": 14692954
+    },
+    {
+      "target": "darwin-x64",
+      "url": "https://github.com/onceMisery/hertz-studio/releases/download/hertz-plugin-standard-v0.3.1/io.github.oncemisery.hertz-studio-0.3.1-darwin-x64.dbxp",
+      "sha256": "bb7cf63b3a835ad37a0031a8990db382906004403eca889f032ed03613782099",
+      "size": 14189141
+    },
+    {
+      "target": "darwin-arm64",
+      "url": "https://github.com/onceMisery/hertz-studio/releases/download/hertz-plugin-standard-v0.3.1/io.github.oncemisery.hertz-studio-0.3.1-darwin-arm64.dbxp",
+      "sha256": "80764b0250513d7764c74d7c9270f3fd7a19aa9986447f1a0d54e621de8b4e86",
+      "size": 13106753
+    }
+  ]
+}
